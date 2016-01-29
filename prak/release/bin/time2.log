@@ -1,0 +1,92 @@
+1: 
+111.64user 0.12system 1:51.93elapsed 99%CPU (0avgtext+0avgdata 24500maxresident)k
+0inputs+1048outputs (0major+6513minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+37.52user 0.24system 0:13.89elapsed 271%CPU (0avgtext+0avgdata 246360maxresident)k
+432inputs+1024outputs (3major+43271minor)pagefaults 0swaps
+2: 
+Command terminated by signal 2
+165.39user 0.57system 2:46.27elapsed 99%CPU (0avgtext+0avgdata 411584maxresident)k
+8inputs+0outputs (0major+73535minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+1.93user 0.09system 0:02.02elapsed 100%CPU (0avgtext+0avgdata 104532maxresident)k
+40inputs+0outputs (3major+30407minor)pagefaults 0swaps
+3: 
+Command terminated by signal 2
+0.16user 0.01system 0:00.18elapsed 98%CPU (0avgtext+0avgdata 81644maxresident)k
+0inputs+0outputs (0major+553minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+0.13user 0.03system 0:00.17elapsed 99%CPU (0avgtext+0avgdata 38952maxresident)k
+0inputs+0outputs (0major+10430minor)pagefaults 0swaps
+4: 
+Command terminated by signal 2
+0.15user 0.00system 0:00.16elapsed 97%CPU (0avgtext+0avgdata 73888maxresident)k
+8inputs+0outputs (0major+658minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+0.12user 0.03system 0:00.16elapsed 99%CPU (0avgtext+0avgdata 32956maxresident)k
+0inputs+0outputs (0major+8931minor)pagefaults 0swaps
+1: 
+112.51user 0.06system 1:52.69elapsed 99%CPU (0avgtext+0avgdata 24500maxresident)k
+240inputs+1048outputs (3major+6510minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+33.87user 0.36system 0:16.81elapsed 203%CPU (0avgtext+0avgdata 246368maxresident)k
+504inputs+1064outputs (5major+46833minor)pagefaults 0swaps
+2: 
+Command terminated by signal 2
+9171.41user 1.66system 2:33:01elapsed 99%CPU (0avgtext+0avgdata 411572maxresident)k
+10824inputs+160outputs (63major+95631minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+1.00user 0.06system 0:01.22elapsed 87%CPU (0avgtext+0avgdata 93512maxresident)k
+95240inputs+0outputs (316major+25261minor)pagefaults 0swaps
+3: 
+Command terminated by signal 2
+0.15user 0.01system 0:00.17elapsed 98%CPU (0avgtext+0avgdata 77652maxresident)k
+8inputs+0outputs (0major+578minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+0.17user 0.02system 0:00.19elapsed 99%CPU (0avgtext+0avgdata 41668maxresident)k
+0inputs+0outputs (0major+11148minor)pagefaults 0swaps
+4: 
+Command terminated by signal 2
+0.14user 0.02system 0:00.16elapsed 98%CPU (0avgtext+0avgdata 74028maxresident)k
+8inputs+0outputs (0major+693minor)pagefaults 0swaps
+Platforms (2):
+    [0] Intel(R) OpenCL
+    [1] Experiment Intel Gen OCL Driver
+Devices (1):
+    [0]        Intel(R) Core(TM) i3-2367M CPU @ 1.40GHz
+Command terminated by signal 2
+0.16user 0.02system 0:00.18elapsed 98%CPU (0avgtext+0avgdata 41484maxresident)k
+0inputs+0outputs (0major+11100minor)pagefaults 0swaps

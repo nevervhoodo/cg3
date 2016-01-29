@@ -1,0 +1,488 @@
+==9826== Memcheck, a memory error detector
+==9826== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==9826== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==9826== Command: ./raytracer
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404933: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:237)
+==9826==    by 0x4065DB: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:160)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404942: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:238)
+==9826==    by 0x4065DB: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:160)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404952: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:239)
+==9826==    by 0x4065DB: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:160)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158A2: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158B6: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158BE: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158D4: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158DD: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158F3: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x40661C: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:161)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158A2: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158B6: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158BE: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158D4: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158DD: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158F3: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x40665D: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:162)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x415647: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x41564F: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x41565B: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x415664: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x415675: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x41567E: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:243)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4157AC: glm::detail::tvec3<double> glm::detail::operator*<double>(glm::detail::tvec3<double> const&, double const&) (type_vec3.inl:704)
+==9826==    by 0x4156BF: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:244)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4157C6: glm::detail::tvec3<double> glm::detail::operator*<double>(glm::detail::tvec3<double> const&, double const&) (type_vec3.inl:704)
+==9826==    by 0x4156BF: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:244)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4157E0: glm::detail::tvec3<double> glm::detail::operator*<double>(glm::detail::tvec3<double> const&, double const&) (type_vec3.inl:704)
+==9826==    by 0x4156BF: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:244)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404933: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:237)
+==9826==    by 0x4066B2: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f998 is not stack'd, malloc'd or (recently) free'd
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404942: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:238)
+==9826==    by 0x4066B2: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f9a0 is not stack'd, malloc'd or (recently) free'd
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x404952: glm::detail::tvec3<double>::operator=(glm::detail::tvec3<double> const&) (type_vec3.inl:239)
+==9826==    by 0x4066B2: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f9a8 is not stack'd, malloc'd or (recently) free'd
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158A2: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158B6: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:273)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f980 is 0 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158BE: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158D4: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:274)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f988 is 8 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid read of size 8
+==9826==    at 0x4158DD: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+==9826== Invalid write of size 8
+==9826==    at 0x4158F3: glm::detail::tvec3<double>& glm::detail::tvec3<double>::operator+=<double>(glm::detail::tvec3<double> const&) (type_vec3.inl:275)
+==9826==    by 0x4066E0: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:165)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826==  Address 0x703f990 is 16 bytes after a block of size 192 alloc'd
+==9826==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x447B26: __gnu_cxx::new_allocator<SRay>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==9826==    by 0x429D10: std::_Vector_base<SRay, std::allocator<SRay> >::_M_allocate(unsigned long) (in /home/dina/mashgraph/3/tracer/bin/raytracer)
+==9826==    by 0x419F50: std::vector<SRay, std::allocator<SRay> >::_M_default_append(unsigned long) (vector.tcc:549)
+==9826==    by 0x415CAA: std::vector<SRay, std::allocator<SRay> >::resize(unsigned long) (stl_vector.h:667)
+==9826==    by 0x406EC4: CTracer::RenderImage(int, int) (tracer.cpp:270)
+==9826==    by 0x4054A9: main (main.cpp:73)
+==9826== 
+--9826-- VALGRIND INTERNAL ERROR: Valgrind received a signal 11 (SIGSEGV) - exiting
+--9826-- si_code=80;  Faulting address: 0x0;  sp: 0x802c99dd0
+
+valgrind: the 'impossible' happened:
+   Killed by fatal signal
+==9826==    at 0x3805CF06: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==9826==    by 0x380216D4: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==9826==    by 0x380218A2: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==9826==    by 0x3809DC03: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==9826==    by 0x380AC87C: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable
+==9826==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9826==    by 0x5E42221: vasprintf (vasprintf.c:50)
+==9826==    by 0x5E24656: asprintf (asprintf.c:35)
+==9826==    by 0x5DFFAE1: __assert_fail_base (assert.c:57)
+==9826==    by 0x5DFFC31: __assert_fail (assert.c:101)
+==9826==    by 0x419B27: double glm::inversesqrt<double>(double const&) (func_exponential.inl:149)
+==9826==    by 0x41569B: glm::detail::tvec3<double> glm::normalize<double>(glm::detail::tvec3<double> const&) (func_geometric.inl:244)
+==9826==    by 0x406687: CTracer::MakeRay(glm::detail::tvec2<unsigned int>, std::vector<SRay, std::allocator<SRay> >*) (tracer.cpp:164)
+==9826==    by 0x406F19: CTracer::RenderImage(int, int) (tracer.cpp:296)
+==9826==    by 0x4054A9: main (main.cpp:73)
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+

@@ -1,0 +1,20 @@
+Size of the output image is X*Y
+input x: 512
+input y: 512
+---------------------------------
+Size of the disk: it is n times wider than black hole
+input n: 8.0
+---------------------------------
+Camera position: {x,y,z}
+input x: 9e+10
+input y: 0.0
+input z: 2e+10
+---------------------------------
+Camera orientation: up {x1,y1,z1}, right {x2,y2,z2}, forward {x3,y3,z4}
+input up: {0.0,0.0,-10.0}
+input right: {0.0,10.0,0.0}
+input forward: {-20.0,0.0,0.0}
+---------------------------------
+Camera angle (degrees): up, right
+input up: 30.0
+input right: 30.0

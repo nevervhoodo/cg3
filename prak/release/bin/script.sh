@@ -1,0 +1,9 @@
+for i in 1 2 3 4
+do
+echo "$i: " >>time2.log
+/usr/bin/time ./raytracer c$i.txt >>time2.log 2>>time2.log
+mv ../img/Result.png ../img/Result2_$i.png
+/usr/bin/time ./clraytracer c$i.txt >>time2.log 2>>time2.log
+mv ../img/clResult.png ../img/clResult2_$i.png
+done
+
